@@ -1,0 +1,10 @@
+=== Sample 1 ===
+
+--- Original Text ---
+You can say something fake but it may not be fake.
+
+--- Model Response ---
+
+
+--------------------------------------------------
+

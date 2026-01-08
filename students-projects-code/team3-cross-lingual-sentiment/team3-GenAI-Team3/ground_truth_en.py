@@ -1,0 +1,59 @@
+
+import pandas as pd
+gt_df = pd.DataFrame([
+    {
+        "topic":"us_fed_meeting_may_2025",
+        "generated":"",
+        "references":[
+            "Investopedia (May 3) noted Fed‑funds futures priced only a 1.8% chance of a May cut, with an almost universal expectation of a hold at 4.25‑4.50%.",
+            "Reuters (May 5) reported policymakers would keep rates steady and that consultancy LHMeyer now foresees no cuts this year given new tariff risks.",
+            "Kiplinger live blog (Apr 30) put the probability of a hold at 94% and said traders still saw a 60% chance of the first cut in June.",
+            "MarketWatch (May 5) said oil fell 4% and stock futures slipped as investors parsed trade risks ahead of Chair Powell’s remarks.",
+            "FingerLakes1 mortgage update (May 5) stressed a 97% odds‑on Fed hold, leaving the average 30‑year fixed rate at 6.70%."
+        ],
+    },
+    {
+        "topic":"trump_third_term_tariffs",
+        "generated":"",
+        "references":[
+            "The Guardian (May 5) headlined Trump’s pledge not to seek a third term and his equivocal ‘I don’t know’ about upholding the Constitution.",
+            "Reuters (May 5) broke news of a 100% tariff on foreign‑made films, framed by Trump as saving a ‘dying’ Hollywood.",
+            "The Times UK (May 5) highlighted the tariff’s unclear scope over streaming and co‑productions, quoting industry fears of retaliation.",
+            "ABC7 New York (May 5) quoted Trump citing the 22nd Amendment and floating J.D. Vance or Marco Rubio as potential successors.",
+            "Axios recap (May 5) said Trump ‘threw cold water’ on 2028 chatter while doubling down on protectionist tariffs and executive‑power claims."
+        ],
+    },
+    {
+        "topic":"bahia_brazil_flood_alert_may_2025",
+        "generated":"",
+        "references":[
+            "GDACS alert (May 4) flagged heavy rainfall in Bahia and issued a green flood notice after evacuations.",
+            "Sampi (May 1) reported nearly 120 municipalities on alert after streets and homes were inundated.",
+            "MetSul Meteorologia (Apr 30) warned of an ‘episódio de chuva extrema’ in eastern Bahia during early May.",
+            "CEMADEN bulletin (May 6) rated flood risk in Salvador as moderate to high due to saturated soils and ongoing rain.",
+            "Bahia Econômica (May 5) relayed an INMET orange alert for 28 municipalities with up to 100 mm of rain in 24 hours."
+        ],
+    },
+    {
+        "topic":"israel_gaza_takeover_plan",
+        "generated":"",
+        "references":[
+            "AP News (May 5) cited Israeli officials saying the cabinet approved a plan to take and hold the entire Gaza Strip.",
+            "Reuters (May 5) detailed a multi‑month strategy that starts with relocating civilians south and controlling aid corridors.",
+            "Washington Post (May 5) described a gradual re‑entry aimed at dismantling Hamas tunnels with an indefinite IDF presence.",
+            "Al Jazeera (May 5) focused on humanitarian concerns over population displacement and aid restrictions.",
+            "The Guardian (May 5) called the announcement a pivotal shift toward open occupation ahead of President Trump’s visit."
+        ],
+    },
+    {
+        "topic":"tech_sector_layoffs_2025",
+        "generated":"",
+        "references":[
+            "TechCrunch tracker (Apr 30) tallied nearly 53,000 tech jobs lost in 2025, about 423 a day.",
+            "Forbes (May 5) noted April alone saw over 23,400 layoffs and debated recession versus skills realignment.",
+            "TrueUp data (May 5) counted 279 layoff events affecting 52,881 people since start of year.",
+            "Business Insider (May 3) linked cuts to rising AI productivity, quoting Satya Nadella on AI writing 30% of code.",
+            "HR Grapevine (Apr 10) said Microsoft is eyeing further reductions in middle management to mirror Google and Amazon."
+        ],
+    },
+])

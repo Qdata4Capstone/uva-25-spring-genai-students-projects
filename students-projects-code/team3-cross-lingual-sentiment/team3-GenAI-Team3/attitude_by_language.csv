@@ -1,0 +1,51 @@
+,en,es,fr,ja,zh
+"('Cultural events', 'Cultural heritage preservation')",0.24078968,0.3293022,0.3830202,0.094491705,0.5718494
+"('Cultural events', 'Fashion industry trends and sustainability')",0.48073044,0.50615203,0.37260252,0.6232524,0.63845664
+"('Cultural events', 'International film festivals')",0.75701666,0.73507786,0.803132,0.6739285,0.7165516
+"('Cultural events', 'Language preservation efforts')",0.49533004,0.36330658,0.5008204,0.33827657,0.57353044
+"('Cultural events', 'Literature and book fairs')",0.85427624,0.79026103,0.8805985,0.7423091,0.6413005
+"('Cultural events', 'Museum exhibitions and historical artifacts')",0.6131398,0.72422165,0.61353105,0.5297221,0.77921516
+"('Cultural events', 'Music and arts funding')",-0.22733317,0.15694585,-0.058300346,0.4366081,0.6453756
+"('Cultural events', 'Olympic Games hosting')",0.13798463,0.32635912,0.12121552,0.29517835,0.53409266
+"('Cultural events', 'Religious festivals and their significance')",0.64036345,0.7367728,0.5659147,0.4814495,0.6589188
+"('Cultural events', 'Traditional cuisine and globalization')",0.51695967,0.48926833,0.43602934,0.17620859,0.6840663
+"('Environmental issues', 'Air pollution in major cities')",-0.65166354,-0.50181746,-0.42656875,-0.5686529,-0.062559575
+"('Environmental issues', 'Carbon emissions reduction')",0.38413766,0.2494128,0.24699983,0.32162923,0.5284316
+"('Environmental issues', 'Climate change and global warming')",-0.34958705,-0.3658321,-0.2421016,-0.10573447,0.060467422
+"('Environmental issues', 'Deforestation in the Amazon')",-0.5679685,-0.52623063,-0.54627585,-0.4759979,-0.30600423
+"('Environmental issues', 'Endangered species protection')",-0.34527576,-0.0024076402,0.036786526,0.056414947,0.5339504
+"('Environmental issues', ""Japan's nuclear wastewater discharge"")",-0.43357843,-0.66510284,-0.5896456,-0.36685842,-0.49179974
+"('Environmental issues', 'Plastic pollution in oceans')",-0.68565273,-0.7395243,-0.7784103,-0.51619864,-0.30612355
+"('Environmental issues', 'Renewable energy adoption')",0.5710477,0.48988324,0.3020433,0.4778587,0.8464705
+"('Environmental issues', 'Sustainable agriculture practices')",0.59608227,0.6050313,0.6474498,0.6176209,0.70394146
+"('Environmental issues', 'Water scarcity and drought')",-0.66390413,-0.61602473,-0.49261296,-0.43013218,-0.2990308
+"('Political events', 'Brexit negotiations')",-0.19446154,-0.35404044,-0.2738821,-0.08338763,0.031567737
+"('Political events', 'Cybersecurity and election interference')",-0.3612365,-0.38903016,-0.32845777,-0.44378418,-0.43188235
+"('Political events', 'Diplomatic relations between China and the U.S.')",-0.08436906,-0.3305543,-0.36832047,-0.17864765,0.20037436
+"('Political events', 'Global governance and the United Nations')",-0.022779882,-0.1291225,-0.019061148,0.103984594,0.43324396
+"('Political events', 'Human rights issues in authoritarian regimes')",-0.77287334,-0.48548645,-0.552171,-0.7350428,-0.5549335
+"('Political events', 'International sanctions and their impacts')",-0.7079519,-0.64180785,-0.6115214,-0.6084859,-0.54286623
+"('Political events', 'Political unrest in the Middle East')",-0.78511924,-0.79958576,-0.7190017,-0.5011672,-0.60115355
+"('Political events', 'Rise of populism in Europe')",-0.31297293,-0.25505036,-0.26574603,-0.31076705,-0.35334465
+"('Political events', 'Trade wars between major economies')",-0.63543,-0.5994097,-0.5308235,-0.3777544,-0.28235438
+"('Political events', 'U.S. presidential election')",0.053015605,0.1049595,0.059296347,0.037287816,0.13979527
+"('Social issues', 'Access to education in developing countries')",-0.48928112,-0.32478732,-0.4367563,-0.39141762,-0.055302173
+"('Social issues', 'Aging population and elder care')",-0.15149558,0.020530865,-0.080075905,-0.08937815,0.21798095
+"('Social issues', 'Gender equality movements')",0.17216748,0.27267623,0.09447627,0.23271662,0.44780624
+"('Social issues', 'Healthcare system reforms')",0.29187593,-0.03475836,0.14176069,0.052030385,0.51050526
+"('Social issues', 'Immigration policies')",-0.28513795,-0.33555263,-0.15796624,0.1773328,0.15438478
+"('Social issues', 'Income inequality and wealth distribution')",-0.36058506,-0.2434097,-0.22592735,-0.32277998,-0.16158836
+"('Social issues', 'LGBTQ+ rights and acceptance')",-0.09963736,0.16259718,-0.06386021,0.082628146,-0.21739641
+"('Social issues', 'Mental health awareness')",0.34019774,0.19972935,0.38155556,0.12554213,0.4589849
+"('Social issues', 'Racial discrimination and protests')",-0.33824313,-0.49013135,-0.44381145,-0.48568514,-0.6787439
+"('Social issues', 'Youth unemployment and job market challenges')",-0.43576008,-0.3175755,-0.29122618,-0.35383785,-0.108278885
+"('Technological advancements', '5G network expansion')",0.45763204,0.63385665,0.4488768,0.50430304,0.7964658
+"('Technological advancements', 'AI regulation')",0.17108452,0.032010525,0.051228434,0.094959535,0.3902045
+"('Technological advancements', 'Autonomous vehicles and safety')",0.06790851,-0.009525716,0.0447668,0.23433854,0.33830407
+"('Technological advancements', 'Biotechnology and genetic engineering')",0.2756497,0.3139987,0.118694946,0.36074832,0.6189267
+"('Technological advancements', 'Cryptocurrency adoption')",0.3467281,0.5356629,0.17875679,0.15373977,0.2488024
+"('Technological advancements', 'Data privacy and protection')",-0.13566934,0.06404805,0.036723524,-0.09117999,0.17571491
+"('Technological advancements', 'Internet of Things (IoT) and smart cities')",0.52896005,0.5607056,0.69351596,0.4547826,0.75734043
+"('Technological advancements', 'Quantum computing developments')",0.8056358,0.59340286,0.6495234,0.5882894,0.7784563
+"('Technological advancements', 'Space exploration and colonization')",0.40163508,0.43299732,0.43208626,-0.025429621,0.3453209
+"('Technological advancements', 'Virtual and augmented reality applications')",0.72297347,0.65415233,0.6928853,0.6360359,0.70398176

@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #d9dde2;
+}
+
+.markdown-body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.markdown-body h1 { font-size: 2em; margin: 0.67em 0; }
+.markdown-body h2 { font-size: 1.5em; margin: 0.75em 0; }
+.markdown-body h3 { font-size: 1.17em; margin: 0.83em 0; }
+.markdown-body strong { font-weight: 600; }
+.markdown-body em { font-style: italic; }
+.markdown-body hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 24px 0;
+}
+.markdown-body p { margin: 0.5em 0; }
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}

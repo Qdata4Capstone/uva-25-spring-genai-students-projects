@@ -1,0 +1,9 @@
+compute_environment: LOCAL_MACHINE
+deepspeed_config: {}
+distributed_type: No
+fp16: true
+machine_rank: 0
+main_process_ip: null
+main_process_port: null
+num_machines: 1
+num_processes: 1  

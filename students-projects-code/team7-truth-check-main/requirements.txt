@@ -1,0 +1,20 @@
+# Core NLP & models
+spacy>=3.0.0
+transformers>=4.21.0
+torch>=1.9.0
+sentencepiece>=0.1.95
+
+# Wikipedia retrieval
+wikipedia>=1.4.0
+
+# Optional UI
+gradio>=3.0.0
+
+# FEVER evaluation dependencies
+datasets>=2.12.0
+tqdm>=4.64.0
+pyarrow>=16.0.0
+
+# Hugging Face Hub & packaging
+huggingface_hub>=0.17.0
+packaging>=23.0 update this requirements.txt file

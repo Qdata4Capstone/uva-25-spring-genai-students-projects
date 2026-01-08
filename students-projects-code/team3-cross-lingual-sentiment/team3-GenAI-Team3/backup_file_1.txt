@@ -1,0 +1,276 @@
+# the 1st pipe-line
+# -------------------------------
+# 全局翻译模型配置（5 种目标语言）
+# -------------------------------
+LANGUAGES = {
+    "ja": {  # 日语
+        "en_to_target": "Helsinki-NLP/opus-mt-en-ja",
+        "target_to_en": "Helsinki-NLP/opus-mt-ja-en"
+    },
+    "zh": {  # 中文
+        "en_to_target": "Helsinki-NLP/opus-mt-en-zh",
+        "target_to_en": "Helsinki-NLP/opus-mt-zh-en"
+    },
+    "fr": {  # 法语
+        "en_to_target": "Helsinki-NLP/opus-mt-en-fr",
+        "target_to_en": "Helsinki-NLP/opus-mt-fr-en"
+    },
+    "es": {  # 西班牙语
+        "en_to_target": "Helsinki-NLP/opus-mt-en-es",
+        "target_to_en": "Helsinki-NLP/opus-mt-es-en"
+    },
+}
+
+NLLB_LANG_CODES = {
+    "zh": "zho_Hans",  # 中文简体
+    "ja": "jpn_Jpan",  # 日语
+    "fr": "fra_Latn",  # 法语
+    "es": "spa_Latn",  # 西班牙语
+    "en": "eng_Latn"   # 英语
+}
+
+
+def load_translation_pipelines():
+    """
+    使用 NLLB-200 加载翻译流水线（支持多语言互译）。
+    """
+    model_name = "facebook/nllb-200-distilled-1.3B"
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to("cuda" if torch.cuda.is_available() else "cpu")
+
+    def build_translator(src_lang, tgt_lang):
+        def translator(text):
+            inputs = tokenizer(
+                text, return_tensors="pt", padding=True, truncation=True, max_length=512
+            ).to(model.device)
+            bos_token_id = tokenizer.convert_tokens_to_ids(NLLB_LANG_CODES[tgt_lang])
+            generated_tokens = model.generate(
+                **inputs,
+                forced_bos_token_id=bos_token_id,
+                max_length=256
+            )
+            return [{"translation_text": tokenizer.decode(generated_tokens[0], skip_special_tokens=True)}]
+        return translator
+
+
+    # 创建一个语言对翻译器字典
+    pipelines = {}
+    for lang in ["zh", "ja", "fr", "es"]:
+        pipelines[lang] = {
+            "en_to_target": build_translator("en", lang),
+            "target_to_en": build_translator(lang, "en")
+        }
+
+    return pipelines
+
+"""
+def load_translation_pipelines():
+    
+    # 构造 5 种语言的翻译流水线字典。
+
+    pipelines = {}
+    for lang, model_names in LANGUAGES.items():
+        pipelines[lang] = {
+            "en_to_target": hf_pipeline(
+                "translation", model=model_names["en_to_target"], tokenizer=model_names["en_to_target"]
+            ),
+            "target_to_en": hf_pipeline(
+                "translation", model=model_names["target_to_en"], tokenizer=model_names["target_to_en"]
+            )
+        }
+    return pipelines
+"""
+# -------------------------------
+# Fine-tune 函数
+# -------------------------------
+def preprocess_function(examples, tokenizer, max_source_length, max_target_length):
+    # 避免 None 或非字符串值
+    def safe_str(s):
+        return str(s) if s is not None else ""
+    
+    # 将语言标记加到输入文本之前；假设 "lang" 字段存在
+    inputs = [f"[{lang}] " + safe_str(t) for lang, t in zip(examples["lang"], examples["title"])]
+    targets = [safe_str(c) for c in examples["content"]]
+
+    model_inputs = tokenizer(inputs, max_length=max_source_length, truncation=True)
+
+    with tokenizer.as_target_tokenizer():
+        labels = tokenizer(targets, max_length=max_target_length, truncation=True)
+
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
+
+
+
+
+def fine_tune(config):
+    """
+    根据config进行 cross-lingual 模型的微调。
+    要求config至少包含：
+      - "dataset_folder": 数据集文件夹，包含若干 jsonl 文件，每个文件保存一种语言数据；
+      - "output_model_dir": 微调后模型保存目录；
+    可选：
+      - "pretrained_model_path": 如未指定，则使用 link 自动下载；
+      - "num_train_epochs", "per_device_train_batch_size", "per_device_eval_batch_size",
+        "max_source_length", "max_target_length"
+    """
+    dataset_folder = config["dataset_folder"]
+    output_model_dir = config["output_model_dir"]
+    pretrained_model_path = config.get("pretrained_model_path", "google/mt5-base")
+    num_train_epochs = config.get("num_train_epochs", 3)
+    per_device_train_batch_size = config.get("per_device_train_batch_size", 8)
+    per_device_eval_batch_size = config.get("per_device_eval_batch_size", 8)
+    max_source_length = config.get("max_source_length", 128)
+    max_target_length = config.get("max_target_length", 128)
+    
+    # 加载 tokenizer 和 模型
+    tokenizer = MT5Tokenizer.from_pretrained(pretrained_model_path)
+    model = MT5ForConditionalGeneration.from_pretrained(pretrained_model_path)
+    
+    # 加载 dataset_folder 下的所有 .jsonl 文件并合并
+    dataset_files = [
+        os.path.join(dataset_folder, f)
+        for f in os.listdir(dataset_folder)
+        if f.endswith(".jsonl")
+    ]
+    if not dataset_files:
+        raise ValueError(f"在 {dataset_folder} 中没有找到 .jsonl 文件")
+    
+    # 修改加载数据时增加语言标记的示例（假设文件名格式为 data_zh.jsonl 等）
+    datasets_list = []
+    for file in dataset_files:
+        # 从文件名中提取语言信息
+        lang_code = os.path.basename(file).split("_")[0]
+        ds = load_dataset(
+            "json",
+            data_files=file,
+            split="train",
+            features=Features({
+                "title": Value("string"),
+                "content": Value("string"),
+                "publish_time": Value("string"),
+                "url": Value("string"),
+            })
+        )
+        # 给数据集添加一个新字段 "lang"
+        ds = ds.map(lambda example: {"lang": lang_code})
+        datasets_list.append(ds)
+
+    full_dataset = concatenate_datasets(datasets_list)
+    full_dataset = full_dataset.shuffle(seed=42)
+    print(f"dataset length is {full_dataset}")
+    tokenized_dataset = full_dataset.map(
+        lambda examples: preprocess_function(examples, tokenizer, max_source_length, max_target_length),
+        batched=True, num_proc=16
+    )
+    
+    # 数据整理器
+    data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
+
+    training_args = TrainingArguments(
+        output_dir=output_model_dir,
+        num_train_epochs=num_train_epochs,
+        per_device_train_batch_size=per_device_train_batch_size,  # 每个 GPU 的 batch size，例如 4
+        per_device_eval_batch_size=per_device_eval_batch_size,    # 每个 GPU 的 eval batch size，例如 4
+        warmup_steps=500,
+        weight_decay=0.01,
+        logging_dir=os.path.join(output_model_dir, "logs"),
+        logging_strategy="steps",
+        logging_steps=100,
+        evaluation_strategy="epoch",  # 在每个 epoch 结束时评估
+        save_strategy="epoch",
+        save_total_limit=2,
+        learning_rate=2e-5,
+        fp16=torch.cuda.is_available(),  # 混合精度训练，适合多 GPU
+        dataloader_num_workers=4,        # 每个 GPU 的数据加载线程，适中值
+        remove_unused_columns=True,
+        report_to=["none"],
+        gradient_accumulation_steps=2,   # 新增：累积梯度，减少内存压力
+        max_grad_norm=1.0,              # 新增：梯度裁剪，稳定多 GPU 训练
+        ddp_find_unused_parameters=True, # 新增：优化 DDP 性能（若使用）
+        )
+        
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=tokenized_dataset,
+        eval_dataset=tokenized_dataset,
+        tokenizer=tokenizer,
+        data_collator=data_collator
+    )
+    
+    print("开始微调，请耐心等待...")
+    # trainer.train()
+    # trainer.save_model(output_model_dir)
+    print(f"微调结束，模型保存在：{output_model_dir}")
+    
+    return model, tokenizer
+
+# -------------------------------
+# Pipeline 函数
+# -------------------------------
+def pipeline_fn(config, query):
+    """
+    完整的流水线：
+      1. 将英文 query 翻译成 4 个目标语言，并保留原英文作为第5种语言 => 得到 [q1, ..., q5]
+      2. 利用 fine-tune 后的 bloomz-1b1 模型生成各语言的回复 [r1, ..., r5]
+      3. 回译每个回复成英文 [r1', ..., r5']
+      4. 对回译的结果进行英文情感分析 [e1, ..., e5]
+    """
+
+    # 0. 初始化模型与设备
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    finetuned_model_dir = config["infer_model"]
+    tokenizer = AutoTokenizer.from_pretrained(finetuned_model_dir)
+    model = AutoModelForCausalLM.from_pretrained(finetuned_model_dir).to(device)
+    text_generation_pipeline = pipeline("text-generation", model=model, tokenizer=tokenizer)
+
+    # 1. 初始化翻译器（NLLB）
+    translation_pipelines = load_translation_pipelines()
+
+    # 2. 语言列表（包括英文）
+    language_list = ["zh", "ja", "fr", "es"]
+    queries = {}
+
+    # 3. 翻译英文 query 到其他语言
+    for lang in language_list:
+        queries[lang] = translation_pipelines[lang]["en_to_target"](query)[0]["translation_text"]
+
+    # 添加原始英文
+    queries["en"] = query
+
+    # 4. 使用 fine-tuned mT5 生成回复
+    
+    responses = {}
+    for lang, q in queries.items():
+        input_text = f"[{lang}] {q}"
+        generated_texts = text_generation_pipeline(input_text, max_length=config["max_target_length"], temperature=0.9, top_p=0.95, do_sample=True)
+        responses[lang] = generated_texts[0]['generated_text']
+
+
+
+    # 5. 回译所有回复为英文
+    back_translations = {}
+    for lang in language_list:
+        back_translations[lang] = translation_pipelines[lang]["target_to_en"](responses[lang])[0]["translation_text"]
+
+    # 原始英文不用回译
+    back_translations["en"] = responses["en"]
+
+    # 6. 情感分析（用 HuggingFace 的标准英文情感模型）
+    sentiment_analyzer = hf_pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
+
+    evaluations = {}
+    for lang, resp in back_translations.items():
+        evaluations[lang] = sentiment_analyzer(resp)[0]  # 输出如 {'label': 'POSITIVE', 'score': 0.998}
+
+    # 返回所有结果
+    return {
+        "translated_queries": queries,
+        "responses": responses,
+        "back_translations": back_translations,
+        "evaluations": evaluations
+    }
+
+
+

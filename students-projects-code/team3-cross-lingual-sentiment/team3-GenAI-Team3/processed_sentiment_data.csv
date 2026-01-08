@@ -1,0 +1,251 @@
+topic,example,language,negative,neutral,positive,attitude
+Cultural events,Cultural heritage preservation,en,0.11807379,0.52306277,0.35886347,0.24078968
+Cultural events,Cultural heritage preservation,es,0.08667111,0.49735558,0.4159733,0.3293022
+Cultural events,Cultural heritage preservation,fr,0.06291953,0.49114075,0.44593972,0.3830202
+Cultural events,Cultural heritage preservation,ja,0.18226536,0.5409776,0.27675706,0.094491705
+Cultural events,Cultural heritage preservation,zh,0.040546592,0.34705743,0.612396,0.5718494
+Cultural events,Fashion industry trends and sustainability,en,0.032073576,0.4551224,0.51280403,0.48073044
+Cultural events,Fashion industry trends and sustainability,es,0.046787664,0.40027264,0.5529397,0.50615203
+Cultural events,Fashion industry trends and sustainability,fr,0.0881752,0.45104706,0.46077773,0.37260252
+Cultural events,Fashion industry trends and sustainability,ja,0.022703826,0.33134001,0.6459562,0.6232524
+Cultural events,Fashion industry trends and sustainability,zh,0.021050422,0.31944248,0.65950704,0.63845664
+Cultural events,International film festivals,en,0.0036121237,0.23575914,0.76062876,0.75701666
+Cultural events,International film festivals,es,0.017355878,0.23021042,0.7524337,0.73507786
+Cultural events,International film festivals,fr,0.014275384,0.16831726,0.81740737,0.803132
+Cultural events,International film festivals,ja,0.019478364,0.28711474,0.6934069,0.6739285
+Cultural events,International film festivals,zh,0.013457695,0.25653303,0.7300093,0.7165516
+Cultural events,Language preservation efforts,en,0.026444426,0.4517811,0.5217745,0.49533004
+Cultural events,Language preservation efforts,es,0.06726237,0.5021687,0.43056893,0.36330658
+Cultural events,Language preservation efforts,fr,0.034164637,0.43085033,0.53498507,0.5008204
+Cultural events,Language preservation efforts,ja,0.09528803,0.4711474,0.4335646,0.33827657
+Cultural events,Language preservation efforts,zh,0.033553753,0.359362,0.6070842,0.57353044
+Cultural events,Literature and book fairs,en,0.0032016754,0.13932048,0.8574779,0.85427624
+Cultural events,Literature and book fairs,es,0.012972513,0.1837939,0.80323356,0.79026103
+Cultural events,Literature and book fairs,fr,0.011446035,0.09650942,0.89204454,0.8805985
+Cultural events,Literature and book fairs,ja,0.01272395,0.23224305,0.755033,0.7423091
+Cultural events,Literature and book fairs,zh,0.018487988,0.3217235,0.6597885,0.6413005
+Cultural events,Museum exhibitions and historical artifacts,en,0.012086808,0.36268657,0.6252266,0.6131398
+Cultural events,Museum exhibitions and historical artifacts,es,0.014559109,0.24666017,0.73878074,0.72422165
+Cultural events,Museum exhibitions and historical artifacts,fr,0.047535863,0.29139718,0.6610669,0.61353105
+Cultural events,Museum exhibitions and historical artifacts,ja,0.03756752,0.3951429,0.5672896,0.5297221
+Cultural events,Museum exhibitions and historical artifacts,zh,0.013050258,0.19468436,0.7922654,0.77921516
+Cultural events,Music and arts funding,en,0.37486184,0.47760952,0.14752866,-0.22733317
+Cultural events,Music and arts funding,es,0.1713387,0.5003767,0.32828456,0.15694585
+Cultural events,Music and arts funding,fr,0.2784912,0.5013179,0.22019085,-0.058300346
+Cultural events,Music and arts funding,ja,0.07248905,0.41841382,0.50909716,0.4366081
+Cultural events,Music and arts funding,zh,0.029056245,0.29651195,0.67443186,0.6453756
+Cultural events,Olympic Games hosting,en,0.1755158,0.5109837,0.31350043,0.13798463
+Cultural events,Olympic Games hosting,es,0.1286118,0.41641727,0.45497093,0.32635912
+Cultural events,Olympic Games hosting,fr,0.1284402,0.6219041,0.24965572,0.12121552
+Cultural events,Olympic Games hosting,ja,0.054919224,0.5949832,0.35009757,0.29517835
+Cultural events,Olympic Games hosting,zh,0.06697175,0.33196384,0.60106444,0.53409266
+Cultural events,Religious festivals and their significance,en,0.004650367,0.3503358,0.6450138,0.64036345
+Cultural events,Religious festivals and their significance,es,0.016718736,0.22978975,0.7534915,0.7367728
+Cultural events,Religious festivals and their significance,fr,0.018790329,0.39650467,0.584705,0.5659147
+Cultural events,Religious festivals and their significance,ja,0.049879946,0.41879058,0.53132945,0.4814495
+Cultural events,Religious festivals and their significance,zh,0.022614405,0.29585236,0.6815332,0.6589188
+Cultural events,Traditional cuisine and globalization,en,0.040318098,0.40240413,0.55727774,0.51695967
+Cultural events,Traditional cuisine and globalization,es,0.037891053,0.43494958,0.5271594,0.48926833
+Cultural events,Traditional cuisine and globalization,fr,0.06684371,0.43028325,0.50287306,0.43602934
+Cultural events,Traditional cuisine and globalization,ja,0.11141923,0.6009529,0.28762782,0.17620859
+Cultural events,Traditional cuisine and globalization,zh,0.017522296,0.28088912,0.7015886,0.6840663
+Environmental issues,Air pollution in major cities,en,0.69384325,0.26397705,0.042179734,-0.65166354
+Environmental issues,Air pollution in major cities,es,0.58866173,0.32449397,0.086844295,-0.50181746
+Environmental issues,Air pollution in major cities,fr,0.52673686,0.37309507,0.100168094,-0.42656875
+Environmental issues,Air pollution in major cities,ja,0.6209234,0.32680616,0.052270487,-0.5686529
+Environmental issues,Air pollution in major cities,zh,0.29361734,0.47532493,0.23105776,-0.062559575
+Environmental issues,Carbon emissions reduction,en,0.08478249,0.44629738,0.46892014,0.38413766
+Environmental issues,Carbon emissions reduction,es,0.12758335,0.4954205,0.37699616,0.2494128
+Environmental issues,Carbon emissions reduction,fr,0.12338803,0.5062241,0.37038785,0.24699983
+Environmental issues,Carbon emissions reduction,ja,0.072896406,0.53257793,0.39452565,0.32162923
+Environmental issues,Carbon emissions reduction,zh,0.035142567,0.4012833,0.56357414,0.5284316
+Environmental issues,Climate change and global warming,en,0.45335346,0.44288012,0.10376641,-0.34958705
+Environmental issues,Climate change and global warming,es,0.4585487,0.4487347,0.092716604,-0.3658321
+Environmental issues,Climate change and global warming,fr,0.3745955,0.49291062,0.1324939,-0.2421016
+Environmental issues,Climate change and global warming,ja,0.26565072,0.574433,0.15991625,-0.10573447
+Environmental issues,Climate change and global warming,zh,0.2018139,0.53590477,0.26228133,0.060467422
+Environmental issues,Deforestation in the Amazon,en,0.6154341,0.33710027,0.04746562,-0.5679685
+Environmental issues,Deforestation in the Amazon,es,0.5877189,0.35079277,0.061488282,-0.52623063
+Environmental issues,Deforestation in the Amazon,fr,0.59950244,0.347271,0.053226575,-0.54627585
+Environmental issues,Deforestation in the Amazon,ja,0.52941966,0.41715857,0.053421754,-0.4759979
+Environmental issues,Deforestation in the Amazon,zh,0.40577525,0.49445373,0.09977102,-0.30600423
+Environmental issues,Endangered species protection,en,0.42557743,0.4941209,0.08030166,-0.34527576
+Environmental issues,Endangered species protection,es,0.23909503,0.52421755,0.23668739,-0.0024076402
+Environmental issues,Endangered species protection,fr,0.20409177,0.5550299,0.2408783,0.036786526
+Environmental issues,Endangered species protection,ja,0.19093138,0.5617223,0.24734633,0.056414947
+Environmental issues,Endangered species protection,zh,0.058114223,0.34982112,0.5920646,0.5339504
+Environmental issues,Japan's nuclear wastewater discharge,en,0.48057306,0.47243232,0.04699463,-0.43357843
+Environmental issues,Japan's nuclear wastewater discharge,es,0.6876476,0.28980777,0.022544732,-0.66510284
+Environmental issues,Japan's nuclear wastewater discharge,fr,0.62052274,0.34860012,0.03087713,-0.5896456
+Environmental issues,Japan's nuclear wastewater discharge,ja,0.43076184,0.50533473,0.063903436,-0.36685842
+Environmental issues,Japan's nuclear wastewater discharge,zh,0.52944034,0.43291906,0.037640598,-0.49179974
+Environmental issues,Plastic pollution in oceans,en,0.7283816,0.22888964,0.042728826,-0.68565273
+Environmental issues,Plastic pollution in oceans,es,0.774748,0.19002828,0.035223708,-0.7395243
+Environmental issues,Plastic pollution in oceans,fr,0.80583596,0.16673842,0.027425662,-0.7784103
+Environmental issues,Plastic pollution in oceans,ja,0.58655953,0.34307954,0.07036089,-0.51619864
+Environmental issues,Plastic pollution in oceans,zh,0.4519028,0.40231788,0.14577927,-0.30612355
+Environmental issues,Renewable energy adoption,en,0.02718992,0.3745725,0.59823763,0.5710477
+Environmental issues,Renewable energy adoption,es,0.065854676,0.3784074,0.5557379,0.48988324
+Environmental issues,Renewable energy adoption,fr,0.10944775,0.47906122,0.41149104,0.3020433
+Environmental issues,Renewable energy adoption,ja,0.03877004,0.4446012,0.51662874,0.4778587
+Environmental issues,Renewable energy adoption,zh,0.0038539802,0.14582153,0.85032445,0.8464705
+Environmental issues,Sustainable agriculture practices,en,0.016155152,0.37160742,0.6122374,0.59608227
+Environmental issues,Sustainable agriculture practices,es,0.022166751,0.35063523,0.62719804,0.6050313
+Environmental issues,Sustainable agriculture practices,fr,0.01829084,0.31596857,0.6657406,0.6474498
+Environmental issues,Sustainable agriculture practices,ja,0.015159411,0.35206023,0.6327803,0.6176209
+Environmental issues,Sustainable agriculture practices,zh,0.0117951045,0.27246836,0.71573657,0.70394146
+Environmental issues,Water scarcity and drought,en,0.6928419,0.2782203,0.028937774,-0.66390413
+Environmental issues,Water scarcity and drought,es,0.6572193,0.30158618,0.04119453,-0.61602473
+Environmental issues,Water scarcity and drought,fr,0.56988394,0.35284507,0.07727098,-0.49261296
+Environmental issues,Water scarcity and drought,ja,0.5034356,0.42326096,0.07330344,-0.43013218
+Environmental issues,Water scarcity and drought,zh,0.43091068,0.4372095,0.13187987,-0.2990308
+Political events,Brexit negotiations,en,0.28402957,0.6264024,0.089568034,-0.19446154
+Political events,Brexit negotiations,es,0.42010766,0.5138252,0.066067226,-0.35404044
+Political events,Brexit negotiations,fr,0.35438704,0.565108,0.08050497,-0.2738821
+Political events,Brexit negotiations,ja,0.20217067,0.67904633,0.11878304,-0.08338763
+Political events,Brexit negotiations,zh,0.155024,0.65838426,0.18659174,0.031567737
+Political events,Cybersecurity and election interference,en,0.42962167,0.5019932,0.06838515,-0.3612365
+Political events,Cybersecurity and election interference,es,0.44711834,0.49479347,0.058088195,-0.38903016
+Political events,Cybersecurity and election interference,fr,0.41055194,0.5073539,0.082094155,-0.32845777
+Political events,Cybersecurity and election interference,ja,0.48412323,0.4755377,0.04033906,-0.44378418
+Political events,Cybersecurity and election interference,zh,0.49183586,0.4482106,0.059953507,-0.43188235
+Political events,Diplomatic relations between China and the U.S.,en,0.2290275,0.6263141,0.14465843,-0.08436906
+Political events,Diplomatic relations between China and the U.S.,es,0.41865987,0.49323454,0.088105574,-0.3305543
+Political events,Diplomatic relations between China and the U.S.,fr,0.4612934,0.44573364,0.09297295,-0.36832047
+Political events,Diplomatic relations between China and the U.S.,ja,0.33023033,0.518187,0.15158267,-0.17864765
+Political events,Diplomatic relations between China and the U.S.,zh,0.105810784,0.58800405,0.30618516,0.20037436
+Political events,Global governance and the United Nations,en,0.23101296,0.560754,0.20823307,-0.022779882
+Political events,Global governance and the United Nations,es,0.275993,0.5771365,0.1468705,-0.1291225
+Political events,Global governance and the United Nations,fr,0.21469744,0.5896663,0.19563629,-0.019061148
+Political events,Global governance and the United Nations,ja,0.14808881,0.5998378,0.2520734,0.103984594
+Political events,Global governance and the United Nations,zh,0.046584092,0.47358784,0.47982806,0.43324396
+Political events,Human rights issues in authoritarian regimes,en,0.7838511,0.20517118,0.010977733,-0.77287334
+Political events,Human rights issues in authoritarian regimes,es,0.5371495,0.41118744,0.051663045,-0.48548645
+Political events,Human rights issues in authoritarian regimes,fr,0.5943262,0.3635186,0.042155176,-0.552171
+Political events,Human rights issues in authoritarian regimes,ja,0.7476998,0.23964319,0.012656962,-0.7350428
+Political events,Human rights issues in authoritarian regimes,zh,0.59124285,0.3724478,0.03630935,-0.5549335
+Political events,International sanctions and their impacts,en,0.7234467,0.2610584,0.015494849,-0.7079519
+Political events,International sanctions and their impacts,es,0.66613144,0.30954498,0.024323605,-0.64180785
+Political events,International sanctions and their impacts,fr,0.6375347,0.3364521,0.026013229,-0.6115214
+Political events,International sanctions and their impacts,ja,0.6272149,0.35405606,0.018729039,-0.6084859
+Political events,International sanctions and their impacts,zh,0.5707063,0.4014536,0.027840063,-0.54286623
+Political events,Political unrest in the Middle East,en,0.79392296,0.19727331,0.008803739,-0.78511924
+Political events,Political unrest in the Middle East,es,0.8080422,0.18350129,0.008456493,-0.79958576
+Political events,Political unrest in the Middle East,fr,0.7302859,0.25843,0.011284159,-0.7190017
+Political events,Political unrest in the Middle East,ja,0.54832983,0.4045075,0.04716267,-0.5011672
+Political events,Political unrest in the Middle East,zh,0.6305428,0.3400679,0.029389264,-0.60115355
+Political events,Rise of populism in Europe,en,0.39873835,0.5154962,0.08576542,-0.31297293
+Political events,Rise of populism in Europe,es,0.37626007,0.5025302,0.12120971,-0.25505036
+Political events,Rise of populism in Europe,fr,0.37849075,0.5087645,0.11274472,-0.26574603
+Political events,Rise of populism in Europe,ja,0.4065049,0.49775723,0.095737845,-0.31076705
+Political events,Rise of populism in Europe,zh,0.4485148,0.45631507,0.09517013,-0.35334465
+Political events,Trade wars between major economies,en,0.6646568,0.30611637,0.02922683,-0.63543
+Political events,Trade wars between major economies,es,0.6355755,0.32825878,0.036165778,-0.5994097
+Political events,Trade wars between major economies,fr,0.5965626,0.33769825,0.0657391,-0.5308235
+Political events,Trade wars between major economies,ja,0.4282841,0.5211862,0.050529733,-0.3777544
+Political events,Trade wars between major economies,zh,0.38961372,0.503127,0.10725933,-0.28235438
+Political events,U.S. presidential election,en,0.069331415,0.80832154,0.12234702,0.053015605
+Political events,U.S. presidential election,es,0.08017333,0.7346938,0.18513283,0.1049595
+Political events,U.S. presidential election,fr,0.046383873,0.8479359,0.10568022,0.059296347
+Political events,U.S. presidential election,ja,0.13017161,0.7023689,0.16745943,0.037287816
+Political events,U.S. presidential election,zh,0.03878262,0.78263944,0.17857789,0.13979527
+Social issues,Access to education in developing countries,en,0.5671208,0.35503957,0.077839665,-0.48928112
+Social issues,Access to education in developing countries,es,0.47038996,0.38400736,0.14560266,-0.32478732
+Social issues,Access to education in developing countries,fr,0.5304927,0.37577093,0.09373642,-0.4367563
+Social issues,Access to education in developing countries,ja,0.5072506,0.37691638,0.115833,-0.39141762
+Social issues,Access to education in developing countries,zh,0.3188589,0.41758442,0.26355672,-0.055302173
+Social issues,Aging population and elder care,en,0.31893918,0.5136172,0.1674436,-0.15149558
+Social issues,Aging population and elder care,es,0.19813785,0.5831934,0.21866871,0.020530865
+Social issues,Aging population and elder care,fr,0.28012612,0.5198237,0.20005022,-0.080075905
+Social issues,Aging population and elder care,ja,0.26665485,0.5560685,0.1772767,-0.08937815
+Social issues,Aging population and elder care,zh,0.12967,0.5226791,0.34765095,0.21798095
+Social issues,Gender equality movements,en,0.14118451,0.5454635,0.313352,0.17216748
+Social issues,Gender equality movements,es,0.104917936,0.5174879,0.37759417,0.27267623
+Social issues,Gender equality movements,fr,0.17252915,0.56046546,0.2670054,0.09447627
+Social issues,Gender equality movements,ja,0.083020754,0.6012418,0.31573737,0.23271662
+Social issues,Gender equality movements,zh,0.0601114,0.43197095,0.50791764,0.44780624
+Social issues,Healthcare system reforms,en,0.06889814,0.5703278,0.36077407,0.29187593
+Social issues,Healthcare system reforms,es,0.2505721,0.5336142,0.21581373,-0.03475836
+Social issues,Healthcare system reforms,fr,0.13680358,0.58463216,0.27856427,0.14176069
+Social issues,Healthcare system reforms,ja,0.15140958,0.6451504,0.20343997,0.052030385
+Social issues,Healthcare system reforms,zh,0.051560756,0.38637325,0.562066,0.51050526
+Social issues,Immigration policies,en,0.36406353,0.5570109,0.07892559,-0.28513795
+Social issues,Immigration policies,es,0.40421242,0.52712774,0.06865978,-0.33555263
+Social issues,Immigration policies,fr,0.27239197,0.6131823,0.11442573,-0.15796624
+Social issues,Immigration policies,ja,0.11406289,0.5945414,0.2913957,0.1773328
+Social issues,Immigration policies,zh,0.1280859,0.58944345,0.28247067,0.15438478
+Social issues,Income inequality and wealth distribution,en,0.44810525,0.46437457,0.08752019,-0.36058506
+Social issues,Income inequality and wealth distribution,es,0.3681901,0.5070295,0.124780424,-0.2434097
+Social issues,Income inequality and wealth distribution,fr,0.36435702,0.49721327,0.13842967,-0.22592735
+Social issues,Income inequality and wealth distribution,ja,0.40785655,0.5070669,0.08507657,-0.32277998
+Social issues,Income inequality and wealth distribution,zh,0.31669027,0.52820784,0.15510191,-0.16158836
+Social issues,LGBTQ+ rights and acceptance,en,0.27813765,0.5433621,0.1785003,-0.09963736
+Social issues,LGBTQ+ rights and acceptance,es,0.1836623,0.47007823,0.34625947,0.16259718
+Social issues,LGBTQ+ rights and acceptance,fr,0.24898337,0.5658935,0.18512316,-0.06386021
+Social issues,LGBTQ+ rights and acceptance,ja,0.17702825,0.56331533,0.2596564,0.082628146
+Social issues,LGBTQ+ rights and acceptance,zh,0.3660201,0.48535618,0.1486237,-0.21739641
+Social issues,Mental health awareness,en,0.13487652,0.39004922,0.47507426,0.34019774
+Social issues,Mental health awareness,es,0.15221587,0.49583888,0.35194522,0.19972935
+Social issues,Mental health awareness,fr,0.08426224,0.44991994,0.4658178,0.38155556
+Social issues,Mental health awareness,ja,0.17556593,0.52332604,0.30110806,0.12554213
+Social issues,Mental health awareness,zh,0.07154749,0.3979201,0.5305324,0.4589849
+Social issues,Racial discrimination and protests,en,0.42421684,0.48980945,0.08597371,-0.33824313
+Social issues,Racial discrimination and protests,es,0.5464244,0.3972825,0.056293044,-0.49013135
+Social issues,Racial discrimination and protests,fr,0.49961412,0.4445832,0.05580268,-0.44381145
+Social issues,Racial discrimination and protests,ja,0.5323284,0.4210283,0.04664328,-0.48568514
+Social issues,Racial discrimination and protests,zh,0.7001414,0.27846113,0.021397453,-0.6787439
+Social issues,Youth unemployment and job market challenges,en,0.5159124,0.40393525,0.08015232,-0.43576008
+Social issues,Youth unemployment and job market challenges,es,0.44285062,0.4318743,0.12527509,-0.3175755
+Social issues,Youth unemployment and job market challenges,fr,0.4280774,0.4350714,0.13685122,-0.29122618
+Social issues,Youth unemployment and job market challenges,ja,0.44169804,0.47044173,0.08786021,-0.35383785
+Social issues,Youth unemployment and job market challenges,zh,0.29745877,0.51336133,0.18917988,-0.108278885
+Technological advancements,5G network expansion,en,0.09999242,0.34238315,0.55762446,0.45763204
+Technological advancements,5G network expansion,es,0.03542087,0.29530156,0.66927755,0.63385665
+Technological advancements,5G network expansion,fr,0.08306585,0.3849915,0.53194267,0.4488768
+Technological advancements,5G network expansion,ja,0.05233498,0.39102703,0.556638,0.50430304
+Technological advancements,5G network expansion,zh,0.0041445545,0.19524513,0.80061036,0.7964658
+Technological advancements,AI regulation,en,0.10036517,0.62818515,0.27144969,0.17108452
+Technological advancements,AI regulation,es,0.18123779,0.60551393,0.21324831,0.032010525
+Technological advancements,AI regulation,fr,0.14229217,0.66418725,0.1935206,0.051228434
+Technological advancements,AI regulation,ja,0.11178767,0.68146515,0.2067472,0.094959535
+Technological advancements,AI regulation,zh,0.043073736,0.523648,0.43327823,0.3902045
+Technological advancements,Autonomous vehicles and safety,en,0.20179842,0.52849466,0.26970693,0.06790851
+Technological advancements,Autonomous vehicles and safety,es,0.2650826,0.47936055,0.25555688,-0.009525716
+Technological advancements,Autonomous vehicles and safety,fr,0.20751478,0.5402037,0.25228158,0.0447668
+Technological advancements,Autonomous vehicles and safety,ja,0.12324156,0.51917833,0.3575801,0.23433854
+Technological advancements,Autonomous vehicles and safety,zh,0.10568291,0.45033014,0.44398698,0.33830407
+Technological advancements,Biotechnology and genetic engineering,en,0.09924797,0.52585435,0.37489766,0.2756497
+Technological advancements,Biotechnology and genetic engineering,es,0.08447771,0.5170459,0.39847642,0.3139987
+Technological advancements,Biotechnology and genetic engineering,fr,0.18825422,0.5047966,0.30694917,0.118694946
+Technological advancements,Biotechnology and genetic engineering,ja,0.06559873,0.5080542,0.42634705,0.36074832
+Technological advancements,Biotechnology and genetic engineering,zh,0.021635197,0.3378029,0.6405619,0.6189267
+Technological advancements,Cryptocurrency adoption,en,0.06282187,0.5276282,0.40954995,0.3467281
+Technological advancements,Cryptocurrency adoption,es,0.030060058,0.40421695,0.56572294,0.5356629
+Technological advancements,Cryptocurrency adoption,fr,0.14177899,0.5376852,0.32053578,0.17875679
+Technological advancements,Cryptocurrency adoption,ja,0.13434173,0.57757676,0.2880815,0.15373977
+Technological advancements,Cryptocurrency adoption,zh,0.11967873,0.5118401,0.36848113,0.2488024
+Technological advancements,Data privacy and protection,en,0.2710872,0.5934949,0.13541786,-0.13566934
+Technological advancements,Data privacy and protection,es,0.15545438,0.62504315,0.21950243,0.06404805
+Technological advancements,Data privacy and protection,fr,0.17050491,0.6222667,0.20722844,0.036723524
+Technological advancements,Data privacy and protection,ja,0.21339363,0.6643927,0.12221364,-0.09117999
+Technological advancements,Data privacy and protection,zh,0.11137558,0.60153395,0.28709048,0.17571491
+Technological advancements,Internet of Things (IoT) and smart cities,en,0.045271203,0.38049752,0.57423127,0.52896005
+Technological advancements,Internet of Things (IoT) and smart cities,es,0.047133256,0.34502783,0.60783887,0.5607056
+Technological advancements,Internet of Things (IoT) and smart cities,fr,0.02084433,0.2647954,0.7143603,0.69351596
+Technological advancements,Internet of Things (IoT) and smart cities,ja,0.04027514,0.46466708,0.49505776,0.4547826
+Technological advancements,Internet of Things (IoT) and smart cities,zh,0.008887478,0.22488464,0.7662279,0.75734043
+Technological advancements,Quantum computing developments,en,0.005893111,0.18257797,0.8115289,0.8056358
+Technological advancements,Quantum computing developments,es,0.03328851,0.34002015,0.62669134,0.59340286
+Technological advancements,Quantum computing developments,fr,0.028818907,0.29283878,0.6783423,0.6495234
+Technological advancements,Quantum computing developments,ja,0.04213359,0.32744342,0.63042295,0.5882894
+Technological advancements,Quantum computing developments,zh,0.009147897,0.20324795,0.78760415,0.7784563
+Technological advancements,Space exploration and colonization,en,0.09447554,0.40941384,0.49611062,0.40163508
+Technological advancements,Space exploration and colonization,es,0.06287596,0.4412508,0.49587327,0.43299732
+Technological advancements,Space exploration and colonization,fr,0.06325749,0.44139877,0.49534374,0.43208626
+Technological advancements,Space exploration and colonization,ja,0.1861574,0.6531148,0.16072778,-0.025429621
+Technological advancements,Space exploration and colonization,zh,0.080513366,0.49365234,0.42583427,0.3453209
+Technological advancements,Virtual and augmented reality applications,en,0.012643391,0.25173977,0.73561686,0.72297347
+Technological advancements,Virtual and augmented reality applications,es,0.024671137,0.29650542,0.6788235,0.65415233
+Technological advancements,Virtual and augmented reality applications,fr,0.032154266,0.24280623,0.72503954,0.6928853
+Technological advancements,Virtual and augmented reality applications,ja,0.025732426,0.31249923,0.6617683,0.6360359
+Technological advancements,Virtual and augmented reality applications,zh,0.019425385,0.25716743,0.72340715,0.70398176

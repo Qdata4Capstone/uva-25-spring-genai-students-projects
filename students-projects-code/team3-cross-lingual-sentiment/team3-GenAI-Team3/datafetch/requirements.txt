@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+lxml
+newspaper3k
+fake_useragent
+tqdm
+langdetect
+selenium
